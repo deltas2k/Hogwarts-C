@@ -39,7 +39,7 @@ static NSString * const kDeathEater = @"deathEater";
     NSString *house = dictionary[kHouse];
     NSString *bloodStatus = dictionary[kBloodStatus];
     NSString *role = dictionary[kRole];
-    BOOL deathEater = dictionary[kDeathEater];
+    BOOL deathEater = [dictionary[kDeathEater] boolValue];
     
     return [self initWithName:name house:house role:role bloodStatus:bloodStatus deathEater:deathEater];
 }
